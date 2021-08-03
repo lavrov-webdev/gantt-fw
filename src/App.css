@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+}
+.wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+}
+.date-marks-wrapper {
+  display: flex;
+  width: 2000px;
+  height: 20px;
+}
+.date-mark {
+  flex-grow: 1;
+  border-right: 1px solid #000;
+  position: relative;
+}
+.date-mark:first-child {
+  border-left: 1px solid #000;
+}
+.date-mark:first-child:before {
+  position: absolute;
+  content: "0";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -100%);
+}
+.date-mark:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: attr(data-index);
+  transform: translate(50%, -100%);
+}
+.items {
+  width: 2000px;
+}
+.item-wrapper {
+  margin: 10px 0;
+  position: relative;
+}
+.item {
+  background-color: gray;
+  color: #fff;
+  position: relative;
+  cursor: grab;
+  padding: 5px;
+}
+.item span {
+  user-select: none;
+}
+.item.in-critical {
+  background-color: #000;
+}
+.item:active {
+  cursor: grabbing;
+}
+.item-access {
+  position: absolute;
+  background-color: rgba(142, 202, 230, 0.5);
+  height: 100%;
+}

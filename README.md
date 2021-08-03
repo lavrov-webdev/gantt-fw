@@ -16,3 +16,7 @@ _src\functions\getRichWorks.js_
 [DHTMLX](https://dhtmlx.com/docs/products/dhtmlxGantt-for-React/)
 
 Но информацию про подключение этих библиотек к стейт менеджеру всё равно найти не получилось
+
+Для запуска локально нужно использовать команду
+
+npm run dev

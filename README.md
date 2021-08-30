@@ -11,14 +11,6 @@ _src\functions\getRichWorks.js_
 
 Единственный используемый мною пакет - react-draggable, но как можно передавать информацию в стор с него я не знаю.
 
-По итогам моего ресёрча с целью найти готове решение с диаграмой Ганта я выделил два самых популярных варианта
-
-[Bryntum](https://www.bryntum.com/examples/gantt/frameworks/react/javascript/advanced/build/index.html)
-
-[DHTMLX](https://dhtmlx.com/docs/products/dhtmlxGantt-for-React/)
-
-Но информацию про подключение этих библиотек к стейт менеджеру всё равно найти не получилось
-
 Для запуска локально нужно использовать команду
 
 npm run dev
